@@ -53,9 +53,5 @@ module.exports = {
     hints: "warning"
   },
 
-  plugins: [],
-
-  optimization: {
-    minimize: false
-  }
+  plugins: []
 };

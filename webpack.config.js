@@ -34,8 +34,5 @@ module.exports = {
     contentBase: path.join(__dirname, "./build"),
     port: 8080,
     hot: true
-  },
-  optimization: {
-    minimize: false
   }
 };
