@@ -1,5 +1,5 @@
 {
-  "name": "react-slick",
+  "name": "@qubit/preact-slick",
   "version": "0.25.2",
   "description": " React port of slick carousel",
   "main": "./lib",
@@ -78,6 +78,7 @@
     "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^3.0.0",
     "webpack": "^4.42.0",
+    "webpack-bundle-analyzer": "^3.6.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9",
     "why-did-you-update": "^0.1.1"

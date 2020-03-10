@@ -1,5 +1,7 @@
 var webpack = require("webpack");
 var path = require("path");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+  .BundleAnalyzerPlugin;
 
 module.exports = {
   mode: "production",
@@ -40,17 +42,10 @@ module.exports = {
   },
 
   externals: {
-    react: {
-      root: "React",
-      commonjs2: "react",
-      commonjs: "react",
-      amd: "react"
-    },
-    "react-dom": {
-      root: "ReactDOM",
-      commonjs2: "react-dom",
-      commonjs: "react-dom",
-      amd: "react-dom"
+    "preact-compat": {
+      commonjs2: "preact-compat",
+      commonjs: "preact-compat",
+      amd: "preact-compat"
     }
   },
 
@@ -64,5 +59,5 @@ module.exports = {
     hints: "warning"
   },
 
-  plugins: []
+  plugins: [new BundleAnalyzerPlugin()]
 };
