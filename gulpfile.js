@@ -19,8 +19,6 @@ gulp.task("clean", function() {
 gulp.task("copy", function() {
   gulp.src("./docs/index.html").pipe(gulp.dest("./build"));
   gulp.src("./docs/docs.css").pipe(gulp.dest("./build"));
-  gulp.src("./docs/slick.css").pipe(gulp.dest("./build"));
-  gulp.src("./docs/slick-theme.css").pipe(gulp.dest("./build"));
   gulp.src("./docs/img/**/*").pipe(gulp.dest("./build/img"));
   gulp
     .src("./node_modules/slick-carousel/slick/fonts/*")
@@ -48,8 +46,6 @@ gulp.task(
     gulp.watch(["./docs/**/*.{scss,sass}"], gulp.parallel(["sass"]));
     gulp.watch(["./docs/index.html"], gulp.parallel(["copy"]));
     gulp.watch(["./docs/docs.css"], gulp.parallel(["copy"]));
-    gulp.watch(["./docs/slick.css"], gulp.parallel(["copy"]));
-    gulp.watch(["./docs/slick-theme.css"], gulp.parallel(["copy"]));
     done();
   })
 );

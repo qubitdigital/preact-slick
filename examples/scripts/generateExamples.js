@@ -50,8 +50,6 @@ let HTMLString = `<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./slick.css">
-    <link rel="stylesheet" href="./slick-theme.css">
     <link rel="stylesheet" href="./docs.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="../node_modules/slick-carousel/slick/slick.min.js"></script>

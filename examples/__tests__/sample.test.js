@@ -1,4 +1,4 @@
-import React from "react";
+import React from "preact-compat";
 import { mount } from "enzyme";
 
 export default class Counter extends React.Component {
@@ -20,7 +20,10 @@ export default class Counter extends React.Component {
 describe("sample counter test", function() {
   it("mutliple counts", function() {
     const wrapper = mount(<Counter />);
-    wrapper.simulate("click").simulate("click");
+    wrapper
+      .find("button")
+      .simulate("click")
+      .simulate("click");
     expect(wrapper.text()).toEqual("Count 2");
   });
 });
